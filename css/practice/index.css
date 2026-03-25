@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: 'NostalgicPoliceVibe';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-6@1.0/Griun_PolSensibility-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'NostalgicPoliceVibe';
+    background-image: url(https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2F09%2F37%2Fa5%2F0937a5a8edfded949a507c443351736a.jpg&type=sc960_832);
+}
+
+
+h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2, h3, h4, img, p{
+    text-align: center;
+}
+
+/* body {
+    text-align: center;
+} */
+
+div{
+    text-align: center;
+}
+
+.practice{
+    width: 150px;
+    height: 150px;
+    border: 3px solid black;
+
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#pizza {
+    background-color: pink;
+}
+
+#chicken {
+    background-color: bisque;
+}
+
+#hamburger {
+    background-color: azure;
+}
+
