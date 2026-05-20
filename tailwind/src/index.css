@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@import url('http://fonts.googleapis.com/earlyaccess/nanumgothic.css');
+
+@theme {
+  --font-ck: "CookieRun", serif;
+}
