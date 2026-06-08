@@ -1,0 +1,29 @@
+import { useState, useEffect } from 'react';
+import instance from '../api/axiosInstance.js';
+
+export const useFetch = (endpoint) => {
+
+    const [loading, setLoading] = useState(false);
+    const [data, setData] = useState(null);
+    const [error, setError] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try{
+                setLoading(true);
+                const response = await instance.get(endpoint);
+                setData(response.data);
+            } catch (err) {
+                setError(true);
+                setErrorMessage(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, [endpoint]);
+
+    return { loading, data, error, errorMessage };
+}
